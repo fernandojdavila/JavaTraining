@@ -24,10 +24,15 @@ public class GenericComparablePojo implements Comparable {
         return genericName != null ? genericName.hashCode() : 0;
     }
 
+
+    //Using the default compareTo method is NOT possible add a new item because always returns 0.
     @Override
     public int compareTo(Object o) {
-        return 0;
+
+        return this.getGenericName().compareTo(((GenericComparablePojo) o).genericName);
     }
 
-
+    public String getGenericName() {
+        return genericName;
+    }
 }
