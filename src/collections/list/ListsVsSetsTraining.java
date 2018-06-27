@@ -51,6 +51,15 @@ public class ListsVsSetsTraining {
         System.out.println("------- Usin Stream ------");
         gameSet.stream().forEach(item -> System.out.println(item));
 
+        //Differences
+
+        //Lists maintains order in which they got inserted
+        //Sets don't maintain order
+
+        //Lists allows duplicates while Sets don't
+
+        //
+
     }
 
 }

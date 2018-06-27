@@ -39,6 +39,13 @@ public class HashSetVsTreeSet {
         System.out.println("-------------------");
         treeSet.stream().forEach(item -> System.out.println(item != null ? item.getGenericName() : "NULL"));
 
+        //HashSet is much faster than TreeSet since HashSet has a constant time performance ad TreeSet has
+        // log(n) cost time for add, remove and contains operations.
+
+        //HashSet uses equals() method for comparision while TreeSet uses compareTo() method for
+        // maintaining order and comparision
+
+
     }
 }
 
