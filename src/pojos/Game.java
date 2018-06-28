@@ -1,6 +1,6 @@
 package pojos;
 
-public class Game {
+public class Game implements Comparable{
 
     private String name;
 
@@ -36,5 +36,10 @@ public class Game {
         return "Game{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.name.compareTo(((Game) o).getName());
     }
 }
