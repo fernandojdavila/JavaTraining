@@ -1,4 +1,4 @@
-package collections.list;
+package collections.map;
 
 import pojos.Game;
 
@@ -36,10 +36,10 @@ public class MapTraining {
         hashMap.put("Three", g3);
         hashMap.put("Four", g4);
 
-        treeMap.put("a.One", g1);
-        treeMap.put("b.Two", g2);
-        treeMap.put("c.Three", g3);
-        treeMap.put("d.Four", g4);
+        treeMap.put("d.One", g1);
+        treeMap.put("c.Two", g2);
+        treeMap.put("b.Three", g3);
+        treeMap.put("a.Four", g4);
 
         linkedHashMap.put("One", g1);
         linkedHashMap.put("Two", g2);
@@ -67,7 +67,28 @@ public class MapTraining {
         /*
         Order:
         --------
+        HashMap doesn't maintain any order
+        TreeMap make a natural order, using the compareTo method based on Key
+        LinkedHashMap maintain the same order which the entries were put
+        HashTable doesn't maintain any order
 
+        Synchronize:
+        ------------
+        Only HashTable is internally synchronized the rest of them not.
+
+        Velocity:
+        --------
+        HashMap provide constant time for get and put operations
+
+
+        Duplication:
+        ------------
+        HashMap, TreeMap, LinkedHashMap or HashTable don't allow duplicated key
+
+        Null Values:
+        -------------
+        HashMap and LinkedHashMap allow null keys, only one
+        TreeMap and HashTable don't allow null keys
 
 
 
