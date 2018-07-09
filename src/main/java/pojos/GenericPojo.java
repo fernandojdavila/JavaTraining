@@ -1,11 +1,11 @@
 package pojos;
 
-public class GenericComparablePojo implements Comparable {
+public class GenericPojo implements Comparable {
 
 
     private String genericName;
 
-    public GenericComparablePojo(String genericName) {
+    public GenericPojo(String genericName) {
         this.genericName = genericName;
     }
 
@@ -14,7 +14,7 @@ public class GenericComparablePojo implements Comparable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        GenericComparablePojo that = (GenericComparablePojo) o;
+        GenericPojo that = (GenericPojo) o;
 
         return genericName != null ? genericName.equals(that.genericName) : that.genericName == null;
     }
@@ -29,7 +29,7 @@ public class GenericComparablePojo implements Comparable {
     @Override
     public int compareTo(Object o) {
 
-        return this.getGenericName().compareTo(((GenericComparablePojo) o).genericName);
+        return this.getGenericName().compareTo(((GenericPojo) o).genericName);
     }
 
     public String getGenericName() {

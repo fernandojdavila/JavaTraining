@@ -1,8 +1,6 @@
 package collections.failfast;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class FailFastExample {
 

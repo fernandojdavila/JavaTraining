@@ -1,6 +1,6 @@
 package collections.list;
 
-import pojos.GenericComparablePojo;
+import pojos.GenericPojo;
 import java.util.*;
 
 import static org.junit.Assert.assertEquals;
@@ -8,15 +8,15 @@ import static org.junit.Assert.assertEquals;
 public class HashSetVsTreeSetVsLinkedHashSet {
 
     public static void main(String[] args) {
-        GenericComparablePojo pojo = new GenericComparablePojo("Goku");
-        GenericComparablePojo pojo2 = new GenericComparablePojo("Picolo");
-        GenericComparablePojo pojo3 = new GenericComparablePojo("Vegeta");
-        GenericComparablePojo pojo4 = new GenericComparablePojo("Roshi");
+        GenericPojo pojo = new GenericPojo("Goku");
+        GenericPojo pojo2 = new GenericPojo("Picolo");
+        GenericPojo pojo3 = new GenericPojo("Vegeta");
+        GenericPojo pojo4 = new GenericPojo("Roshi");
 
 
-        HashSet<GenericComparablePojo> hashSet = new HashSet<>();
-        TreeSet<GenericComparablePojo> treeSet = new TreeSet<>();
-        LinkedHashSet<GenericComparablePojo> linkedHashSet = new LinkedHashSet<>();
+        HashSet<GenericPojo> hashSet = new HashSet<>();
+        TreeSet<GenericPojo> treeSet = new TreeSet<>();
+        LinkedHashSet<GenericPojo> linkedHashSet = new LinkedHashSet<>();
 
         hashSet.add(pojo);
         hashSet.add(pojo2);

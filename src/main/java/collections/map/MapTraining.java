@@ -35,21 +35,25 @@ public class MapTraining {
         hashMap.put("Two", g2);
         hashMap.put("Three", g3);
         hashMap.put("Four", g4);
+        hashMap.put("One", g1);//Duplicated
 
         treeMap.put("d.One", g1);
         treeMap.put("c.Two", g2);
         treeMap.put("b.Three", g3);
         treeMap.put("a.Four", g4);
+        treeMap.put("d.One", g1);//Duplicated
 
         linkedHashMap.put("One", g1);
         linkedHashMap.put("Two", g2);
         linkedHashMap.put("Three", g3);
         linkedHashMap.put("Four", g4);
+        linkedHashMap.put("One", g1);//Dupicated
 
         hashtable.put("One", g1);
         hashtable.put("Two", g2);
         hashtable.put("Three", g3);
         hashtable.put("Four", g4);
+        hashtable.put("One", g1);//Duplicated
 
         System.out.println("----------- HashMap -----------");
         hashMap.entrySet().stream().forEach(item -> System.out.println(item.getValue().getName()));
@@ -80,10 +84,9 @@ public class MapTraining {
         --------
         HashMap provide constant time for get and put operations
 
-
         Duplication:
         ------------
-        HashMap, TreeMap, LinkedHashMap or HashTable don't allow duplicated key
+        HashMap, TreeMap, LinkedHashMap and HashTable don't allow duplicated key
 
         Null Values:
         -------------
